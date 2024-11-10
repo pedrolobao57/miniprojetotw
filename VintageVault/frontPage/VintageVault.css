@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.hero {
+    min-height: 100vh;
+    background:linear-gradient(45deg, rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.40)), url(interior-of-a-thrift-shop-3.webp) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbarButtons {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav li a{
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 15px;
+
+}
+
