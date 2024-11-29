@@ -21,7 +21,7 @@
     padding: 5rem 1rem ;
 }
 
-.section__title {
+.section-title {
     padding-bottom: .5rem ;
     margin-bottom: 4rem;
     text-align: center;
@@ -31,7 +31,7 @@
     position: relative;
 }
 
-.section__title::after{
+.section-title::after{
     content: "";
     position: absolute;
     left: 50%;
@@ -106,4 +106,150 @@ body {
 .nav-icons span{
     font-size: 1.25rem;
     cursor: pointer;
+}
+
+header {
+    margin-top: 10rem;
+    background-color: #f1faff ;
+
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.header-content p{
+    font-size: .8rem;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #030712;
+}
+
+.header-content .button {
+    background-color: #030712;
+    color: #ffffff;
+    border-radius: 8rem;
+}
+
+.header-image {
+    position: relative;
+}
+
+.header-image img {
+    max-width: 950px;
+    position: absolute;
+    bottom: -5rem;
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    max-width: 400px;
+    margin: auto;
+}
+
+.collection-content {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+.collection-content .section__title {
+    margin-bottom: 2rem;
+}
+
+.collection-content p{
+    font-size: .9rem;
+    color: #6b7280;
+    margin-bottom: .1rem;
+}
+
+.collection-content h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.collection-content .button{
+    border: 1px solid #030712;
+    color: #030712;
+    background-color: #ffffff;
+}
+
+.collection-content .button:hover{
+    background-color: #030712;
+    color: #ffffff;
+}
+
+.sale-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+    
+.sale-card {
+    position: relative;
+    overflow: hidden;
+}    
+
+.sale-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sale-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sale-title span{
+    font-size: 2.5rem;
+}
+
+.sale-sub {
+    font-size: 1rem;
+}
+
+.sale-button {
+    margin-top: 2rem;
+    color: #ffffff;
+    background-color: #030712;
+}
+
+.sale-card::before{
+    position: absolute;
+    content: "";
+    height:100%;
+    width: 100%;
+    top:-100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.sale-card:hover::before {
+    top: 0;
+}
+
+.sale-card:hover .sale-button{
+    color:#030712;
+    background-color: #ffffff;
 }
